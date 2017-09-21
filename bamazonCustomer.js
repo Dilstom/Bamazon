@@ -1,6 +1,5 @@
 var mysql = require("mysql");
 var inquirer = require('inquirer');
-var table = require('cli-table');
 require("console.table");
 var leftItem;
 var getItemId = 0;
@@ -23,34 +22,15 @@ connection.connect(function (err) {
 
 });
 
+//create table
+
 function afterConnection() {
     connection.query("SELECT * FROM products1", function (err, res) {
         if (err) throw err;
         console.table(res);
-        // // console.log(res);
-        // var newTable = new table({
-        //     head: ['Product ID', 'Product Name', 'Department Name', 'Product Price', 'Stock Quantity']
-        //     //   , colWidths: [100, 200]
-        // });
-        // // table.push(
-        // //     ['First value', 'Second value']
-        // //   , ['First value', 'Second value']
-        // // );
-        // for (var i = 0; i < res.length; i++) {
-        //     var allItems = [];
-        //     for (var listResult in res[i]) {
-        //         allItems.push(res[i][listResult]);
-        //     }
-        //     newTable.push(allItems);
-        // }
-        // console.log(newTable.toString());
-
     });
     start();
 }
-
-//a) message "Id to buy" -  (and Quit)-> b) message "How many" -> updated table with new prompt
-
 
 function start() {
     connection.query("\nSELECT * FROM products1", function (err, results) {
