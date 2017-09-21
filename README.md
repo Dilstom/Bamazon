@@ -4,7 +4,7 @@
 
  The app should then prompt users with two messages.
  - The first asks them the ID of the product they would like to buy.
- ![alt text](images/Capture1.png "The First Prompt")
+ ![alt text](images/Capture1.PNG "The First Prompt")
  
  - The second message asks how many units of the product they would like to buy.
 
