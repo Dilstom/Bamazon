@@ -4,6 +4,8 @@
 
  The app should then prompt users with two messages.
  - The first asks them the ID of the product they would like to buy.
+ ![alt text](images/Capture1.png "The First Prompt")
+ 
  - The second message asks how many units of the product they would like to buy.
 
  Once the customer has placed the order, this application checks if this "store" has enough of the product to meet the customer's request.
