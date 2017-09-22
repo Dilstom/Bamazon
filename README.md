@@ -2,12 +2,12 @@
 
  The app takes in orders from customers and depletes stock from the store's inventory.
 
- The app should then prompt users with two messages.
- - The first asks them the ID of the product they would like to buy.
+ The app prompts users with two messages:
+ - the first asks them the ID of the product they would like to buy.
 
  ![alt text](images/Capture1.PNG "The First Prompt")
  
- - The second message asks how many units of the product they would like to buy.
+ - the second message asks how many units of the product they would like to buy.
 
  ![alt text](images/Capture2.PNG "The Second Prompt")
 
